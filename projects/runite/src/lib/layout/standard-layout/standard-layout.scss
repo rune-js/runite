@@ -1,0 +1,23 @@
+@import '../../bg';
+
+
+@mixin rune-standard-layout-styles($theme) {
+    .rune-standard-layout {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .rune-layout-body {
+            box-sizing: border-box;
+            padding: 48px 0;
+
+            @media screen and (max-width: 550px) {
+                padding: 0;
+            }
+
+            *[rune-body] {
+                flex: 1 1 auto;
+            }
+        }
+    }
+}

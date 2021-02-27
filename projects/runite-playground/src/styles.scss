@@ -1,0 +1,47 @@
+@import 'projects/runite/styles';
+@import 'projects/runite/src/lib/palette';
+
+@font-face {
+    font-family: 'Kingthings Petrock';
+    src: url('assets/kingthings-petrock.regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kingthings Petrock Light';
+    src: url('assets/kingthings-petrock.light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Trajan Pro Regular';
+    src: url('assets/trajan-pro.regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Trajan Pro Bold';
+    src: url('assets/trajan-pro.bold.ttf') format('truetype');
+}
+
+$theme: rune-theme((
+    body-font: ('Poppins', sans-serif),
+    body-font-size: 16px,
+    header-font: ('Kingthings Petrock', Times, serif),
+    primary-color: $limeade,
+    primary-color-darker: $verdun-green,
+    accent-color: $fiery-orange,
+    accent-color-darker: $morocco-brown,
+    default-color: $cello,
+    default-color-darker: $cinder
+));
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: black;
+    @include runite-body($theme);
+}
+
+@include runite-core($theme);

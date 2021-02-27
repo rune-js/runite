@@ -1,0 +1,87 @@
+@import '../../palette';
+@import '../scroll/scroll-textures';
+
+
+@mixin rune-table-styles($theme) {
+    $accent: map-get($theme, accent-color);
+    $accent-darker: map-get($theme, accent-color-darker);
+
+    .rune-table {
+        width: 100%;
+        border-spacing: 0;
+        border-bottom: 2px solid $korma;
+        border-radius: 0 0 6px 6px;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+
+        thead {
+            tr {
+                background: $accent;
+                background-image: $metal-bg-url;
+                background-image: $metal-bg-url, linear-gradient(179deg, $accent, $accent-darker);
+
+                td {
+                    font-size: 18px;
+                    line-height: 32px;
+                    font-variant: small-caps;
+                    color: white;
+                    text-shadow: 1px 1px 2px black;
+                    font-family: 'Trajan Pro Bold', Times, serif;
+                    border-bottom: 4px solid darken($accent-darker, 10%);
+                    border-top: 4px solid lighten($accent-darker, 8%);
+                    padding: 0 16px;
+
+                    &:first-child {
+                        border-left: 4px solid lighten($accent-darker, 4%);
+                        padding-left: 13px;
+                        border-radius: 2px;
+                    }
+                    &:last-child {
+                        border-right: 4px solid darken($accent-darker, 6%);
+                        padding-right: 13px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr:nth-child(even) {
+                background: $sapling $scroll-texture-a-url repeat center center;
+            }
+            tr:nth-child(odd) {
+                background: $straw $scroll-texture-b-url repeat center center;
+            }
+
+            td {
+                padding: 6px 18px;
+                border-left: 1px solid transparent;
+                border-right: 1px solid transparent;
+
+                + td {
+                    border-left: 1px solid $parchment;
+                }
+
+                &:not(:last-child) {
+                    border-right: 1px solid $korma;
+                }
+
+                &:first-child {
+                    border-left: 2px solid $korma;
+                }
+
+                &:last-child {
+                    border-right: 2px solid $korma;
+                }
+            }
+
+            tr:last-of-type {
+                td:first-child {
+                    border-bottom-left-radius: 6px;
+                }
+                td:last-child {
+                    border-bottom-right-radius: 6px;
+                }
+            }
+        }
+    }
+}

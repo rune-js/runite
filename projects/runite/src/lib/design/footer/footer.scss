@@ -1,0 +1,31 @@
+@import '../../bg';
+@import '../../palette';
+
+
+@mixin rune-footer-styles($theme) {
+    .rune-footer {
+        background: darkgray $stone-url repeat left top;
+        border-top: 1px solid $tuna;
+        display: block;
+
+        .rune-footer-container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 8px 16px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-size: map-get($theme, body-font-size) - 2;
+            font-weight: 300;
+            display: flex;
+            color: rgba(255, 255, 255, 0.8);
+
+            aside:first-child {
+                flex: 1 1 auto;
+            }
+
+            a {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import 'scroll-images';
+@import '../../palette';
+
+
+@mixin rune-scroll-styles($theme) {
+    .rune-scroll {
+        max-width: 1014px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        padding: 16px 0;
+        color: black;
+
+        @media screen and (max-width: 550px) {
+            padding: 0;
+        }
+
+        .rune-scroll-top, .rune-scroll-bottom, .rune-scroll-content {
+            width: 100%;
+        }
+
+        .rune-scroll-top, .rune-scroll-bottom {
+            position: absolute;
+            height: 112px;
+            z-index: 1;
+            left: 0;
+
+            @media screen and (max-width: 550px) {
+                display: none;
+            }
+        }
+
+        .rune-scroll-top {
+            background: transparent $scroll-top-url no-repeat center top;
+            top: 0;
+        }
+
+        .rune-scroll-bottom {
+            background: transparent $scroll-bottom-url no-repeat center top;
+            bottom: 0;
+        }
+
+        main.rune-scroll-content {
+            background: transparent $scroll-content-url repeat-y top center;
+            position: relative;
+            z-index: 0;
+            padding: 54px 48px;
+            box-sizing: border-box;
+            display: block;
+            min-height: 200px;
+
+            @media screen and (max-width: 550px) {
+                padding: 32px 16px;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: $walnut;
+            }
+        }
+    }
+}
