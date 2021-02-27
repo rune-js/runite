@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RuniteScrollLayoutModule } from './standard-layout/scroll-layout.module';
+import { RuniteScrollLayoutModule } from './scroll-layout/scroll-layout.module';
 
 
 const runiteLayoutSubModules = [

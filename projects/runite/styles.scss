@@ -4,7 +4,7 @@
 @import 'src/lib/design/table/table';
 @import 'src/lib/design/panel/panel';
 @import 'src/lib/controls/button/button';
-@import 'src/lib/layout/standard-layout/scroll-layout';
+@import 'src/lib/layout/scroll-layout/scroll-layout';
 @import 'src/lib/bg';
 
 
@@ -19,7 +19,7 @@
     @include rune-table-styles($theme);
     @include rune-panel-styles($theme);
     @include rune-button-styles($theme);
-    @include rune-standard-layout-styles($theme);
+    @include rune-scroll-layout-styles($theme);
 
     h1, h2, h3, h4, h5, h6 {
         font-family: map-get($theme, header-font);
