@@ -6,7 +6,7 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 })
 export class RuniteScrollLayoutComponent implements OnInit {
 
-    @HostBinding('class.rune-scrull-layout')
+    @HostBinding('class.rune-scroll-layout')
     public standardLayoutClass = true;
 
     public constructor() {
