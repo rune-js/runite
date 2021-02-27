@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { RuneStandardLayoutModule } from './standard-layout/standard-layout.module';
+import { RuniteScrollLayoutModule } from './standard-layout/scroll-layout.module';
 
 
 const runiteLayoutSubModules = [
-    RuneStandardLayoutModule
+    RuniteScrollLayoutModule
 ];
 
 @NgModule({

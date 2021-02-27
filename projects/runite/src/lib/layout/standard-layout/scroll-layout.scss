@@ -1,8 +1,8 @@
 @import '../../bg';
 
 
-@mixin rune-standard-layout-styles($theme) {
-    .rune-standard-layout {
+@mixin rune-scroll-layout-styles($theme) {
+    .rune-scroll-layout {
         height: 100%;
         display: flex;
         flex-direction: column;
