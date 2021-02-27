@@ -5,9 +5,9 @@
 @mixin rune-panel-styles($theme) {
     .rune-panel {
         width: 100%;
-        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
-        border-radius: 0 0 6px 6px;
+        box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
         display: block;
+        border-radius: 2px 2px 4px 4px;
 
         $accent: map-get($theme, accent-color);
         $accent-darker: map-get($theme, accent-color-darker);
@@ -20,7 +20,7 @@
             text-shadow: 1px 1px 2px black;
             font-family: 'Trajan Pro Bold', Times, serif;
             text-align: center;
-            border-radius: 2px;
+            border-radius: 2px 2px 1px 1px;
             border-top: 4px solid lighten($accent-darker, 8%);
             border-left: 4px solid lighten($accent-darker, 4%);
             border-right: 4px solid darken($accent-darker, 6%);
@@ -33,13 +33,14 @@
         *[rune-panel-body] {
             padding: 16px;
             border: 2px solid $korma;
-            border-radius: 0 0 6px 6px;
             box-sizing: border-box;
-            background: $straw $scroll-texture-b-url repeat center center;
+            background: $straw $metal-bg-url repeat;
+            border-radius: 4px;
         }
 
         *[rune-panel-header] + *[rune-panel-body] {
             border-top-width: 0;
+            border-radius: 0 0 4px 4px;
         }
     }
 }

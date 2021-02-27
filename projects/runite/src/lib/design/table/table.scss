@@ -10,8 +10,8 @@
         width: 100%;
         border-spacing: 0;
         border-bottom: 2px solid $korma;
-        border-radius: 0 0 6px 6px;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);
+        border-radius: 2px 2px 4px 4px;
 
         thead {
             tr {
@@ -33,12 +33,12 @@
                     &:first-child {
                         border-left: 4px solid lighten($accent-darker, 4%);
                         padding-left: 13px;
-                        border-radius: 2px;
+                        border-top-left-radius: 2px;
                     }
                     &:last-child {
                         border-right: 4px solid darken($accent-darker, 6%);
                         padding-right: 13px;
-                        border-radius: 2px;
+                        border-top-right-radius: 2px;
                     }
                 }
             }
@@ -76,10 +76,10 @@
 
             tr:last-of-type {
                 td:first-child {
-                    border-bottom-left-radius: 6px;
+                    border-bottom-left-radius: 4px;
                 }
                 td:last-child {
-                    border-bottom-right-radius: 6px;
+                    border-bottom-right-radius: 4px;
                 }
             }
         }
