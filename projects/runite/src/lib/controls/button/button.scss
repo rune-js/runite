@@ -5,9 +5,9 @@
 @mixin rune-button-styles($theme) {
     .rune-button {
         text-decoration: none;
-        padding: 0 24px;
-        font-size: 16px;
-        line-height: 26px;
+        padding: 0 25px;
+        font-size: 15px;
+        line-height: 25px;
         font-variant: small-caps;
         color: white;
         text-shadow: 1px 1px 2px black;
@@ -25,14 +25,16 @@
             color: hsla(0, 0%, 100%, 0.9);
         }
 
+        $border-size: 3px;
+
         &.rune-primary {
             $primary: map-get($theme, primary-color);
             $primary-darker: map-get($theme, primary-color-darker);
 
-            border-top: 4px solid lighten($primary-darker, 8%);
-            border-left: 4px solid lighten($primary-darker, 4%);
-            border-right: 4px solid darken($primary-darker, 6%);
-            border-bottom: 4px solid darken($primary-darker, 10%);
+            border-top: $border-size solid lighten($primary-darker, 8%);
+            border-left: $border-size solid lighten($primary-darker, 4%);
+            border-right: $border-size solid darken($primary-darker, 6%);
+            border-bottom: $border-size solid darken($primary-darker, 10%);
             background: $primary;
             background-image: $metal-bg-url;
             background-image: $metal-bg-url, linear-gradient(165deg, $primary, $primary-darker);
@@ -40,10 +42,10 @@
             &:active {
                 background-image: $metal-bg-url,
                     linear-gradient(165deg, darken($primary, 10%), darken($primary-darker, 10%));
-                border-bottom: 4px solid lighten($primary-darker, 8%);
-                border-right: 4px solid lighten($primary-darker, 4%);
-                border-left: 4px solid darken($primary-darker, 6%);
-                border-top: 4px solid darken($primary-darker, 10%);
+                border-bottom: $border-size solid lighten($primary-darker, 8%);
+                border-right: $border-size solid lighten($primary-darker, 4%);
+                border-left: $border-size solid darken($primary-darker, 6%);
+                border-top: $border-size solid darken($primary-darker, 10%);
             }
         }
 
@@ -51,10 +53,10 @@
             $accent: map-get($theme, accent-color);
             $accent-darker: map-get($theme, accent-color-darker);
 
-            border-top: 4px solid lighten($accent-darker, 8%);
-            border-left: 4px solid lighten($accent-darker, 4%);
-            border-right: 4px solid darken($accent-darker, 6%);
-            border-bottom: 4px solid darken($accent-darker, 10%);
+            border-top: $border-size solid lighten($accent-darker, 8%);
+            border-left: $border-size solid lighten($accent-darker, 4%);
+            border-right: $border-size solid darken($accent-darker, 6%);
+            border-bottom: $border-size solid darken($accent-darker, 10%);
             background: $accent;
             background-image: $metal-bg-url;
             background-image: $metal-bg-url, linear-gradient(175deg, $accent, $accent-darker);
@@ -62,10 +64,10 @@
             &:active {
                 background-image: $metal-bg-url,
                     linear-gradient(175deg, darken($accent, 10%), darken($accent-darker, 10%));
-                border-bottom: 4px solid lighten($accent-darker, 8%);
-                border-right: 4px solid lighten($accent-darker, 4%);
-                border-left: 4px solid darken($accent-darker, 6%);
-                border-top: 4px solid darken($accent-darker, 10%);
+                border-bottom: $border-size solid lighten($accent-darker, 8%);
+                border-right: $border-size solid lighten($accent-darker, 4%);
+                border-left: $border-size solid darken($accent-darker, 6%);
+                border-top: $border-size solid darken($accent-darker, 10%);
             }
         }
 
@@ -73,10 +75,10 @@
             $default-color: map-get($theme, default-color);
             $default-color-darker: map-get($theme, default-color-darker);
 
-            border-top: 4px solid lighten($default-color-darker, 8%);
-            border-left: 4px solid lighten($default-color-darker, 4%);
-            border-right: 4px solid darken($default-color-darker, 6%);
-            border-bottom: 4px solid darken($default-color-darker, 10%);
+            border-top: $border-size solid lighten($default-color-darker, 8%);
+            border-left: $border-size solid lighten($default-color-darker, 4%);
+            border-right: $border-size solid darken($default-color-darker, 6%);
+            border-bottom: $border-size solid darken($default-color-darker, 10%);
             background: $default-color;
             background-image: $metal-bg-url;
             background-image: $metal-bg-url, linear-gradient(165deg, $default-color, $default-color-darker);
@@ -84,10 +86,10 @@
             &:active {
                 background-image: $metal-bg-url,
                 linear-gradient(165deg, darken($default-color, 10%), darken($default-color-darker, 10%));
-                border-bottom: 4px solid lighten($default-color-darker, 8%);
-                border-right: 4px solid lighten($default-color-darker, 4%);
-                border-left: 4px solid darken($default-color-darker, 6%);
-                border-top: 4px solid darken($default-color-darker, 10%);
+                border-bottom: $border-size solid lighten($default-color-darker, 8%);
+                border-right: $border-size solid lighten($default-color-darker, 4%);
+                border-left: $border-size solid darken($default-color-darker, 6%);
+                border-top: $border-size solid darken($default-color-darker, 10%);
             }
         }
 

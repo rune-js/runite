@@ -1,0 +1,9 @@
+section {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 16px;
+
+    + section {
+        margin-top: 16px;
+    }
+}

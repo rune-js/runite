@@ -82,9 +82,22 @@
 
         <rune-panel>
             <div rune-panel-body>
-                <rune-input placeholder="Player Name">
-                    <label rune-label>Player Name</label>
-                </rune-input>
+                <section>
+                    <rune-input placeholder="Choose a name...">
+                        <label rune-label>Player Name</label>
+                    </rune-input>
+
+                    <rune-input placeholder="Choose a password..." type="password">
+                        <label rune-label>Password</label>
+                    </rune-input>
+                </section>
+
+                <section>
+                    <button rune-button color="primary">Create Account</button>
+                    <div>
+                        <button rune-button>Back</button>
+                    </div>
+                </section>
             </div>
         </rune-panel>
 

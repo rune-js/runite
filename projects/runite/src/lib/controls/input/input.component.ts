@@ -10,7 +10,7 @@ export class RuniteInputComponent implements OnInit {
     public runeInputClass = true;
 
     @Input()
-    public placeholder: string = '';
+    public placeholder: string | undefined = undefined;
 
     @Input()
     public type: 'text' | 'password' | 'tel' | 'email' | 'number' = 'text';
