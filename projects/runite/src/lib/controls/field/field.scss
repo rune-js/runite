@@ -1,38 +1,49 @@
 @import '../../palette';
 
 
-@mixin rune-input-styles($theme) {
-    .rune-input {
+@mixin rune-field-styles($theme) {
+    .rune-field {
         display: inline-flex;
         flex-direction: column;
 
         label {
-            font-family: map-get($theme, title-font);
-            font-variant: small-caps;
+            font-family: map-get($theme, label-font);
             color: darken($jean-bean, 7%);
             margin-bottom: 6px;
             font-size: 14px;
+            font-weight: bold;
         }
 
-        input {
+        .rune-field-wrapper {
             background: $jean-bean;
             font-weight: 400;
-            padding: 8px;
             border: 1px solid $woodsmoke;
             font-family: map-get($theme, body-font);
             caret-color: $parchment;
             color: white;
             border-radius: 3px;
-            outline: none;
             transition: background 300ms;
 
             &::placeholder {
                 color: $dirt;
             }
 
-            &:focus {
-                outline: none;
+            &:focus-within {
                 background: $morocco-brown;
+            }
+
+            input {
+                outline: none;
+                color: inherit;
+                caret-color: inherit;
+                background: transparent;
+                border-width: 0;
+                border-radius: 3px;
+                padding: 0 8px;
+                box-sizing: border-box;
+                height: 35px;
+                line-height: 35px;
+                font-family: inherit;
             }
         }
     }

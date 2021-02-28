@@ -11,8 +11,8 @@ export * from './lib/runite.module';
 export * from './lib/controls/controls.module';
 export * from './lib/controls/button/button.module';
 export * from './lib/controls/button/button.component';
-export * from './lib/controls/input/input.module';
-export * from './lib/controls/input/input.component';
+export * from './lib/controls/field/field.module';
+export * from './lib/controls/field/field.component';
 
 
 /**
@@ -29,6 +29,8 @@ export * from './lib/design/scroll/scroll.module';
 export * from './lib/design/scroll/scroll.component';
 export * from './lib/design/table/table.module';
 export * from './lib/design/table/table.component';
+export * from './lib/design/icon/icon.module';
+export * from './lib/design/icon/icon.component';
 
 
 /**

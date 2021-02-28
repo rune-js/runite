@@ -1,9 +1,19 @@
 section {
     display: grid;
     grid-template-columns: 200px 200px;
-    grid-column-gap: 16px;
+    grid-column-gap: 15px;
 
     + section {
-        margin-top: 16px;
+        margin-top: 15px;
     }
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+.rune-icon:last-of-type {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
 }

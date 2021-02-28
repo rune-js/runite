@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RuniteButtonModule } from './button/button.module';
-import { RuniteInputModule } from './input/input.module';
+import { RuniteFieldModule } from './field/field.module';
 
 
 const controlSubModules = [
     RuniteButtonModule,
-    RuniteInputModule
+    RuniteFieldModule
 ];
 
 @NgModule({

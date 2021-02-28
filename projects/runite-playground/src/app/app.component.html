@@ -72,9 +72,14 @@
             </div>
 
             <div rune-panel-body>
-                Hello
+                <rune-icon color="primary" raised size="32">home</rune-icon>
+                <rune-icon color="accent" [raised]="false">home</rune-icon>
+                <rune-icon color="default" [raised]="true">home</rune-icon>
+                <rune-icon color="soft">home</rune-icon>
+                <rune-icon color="inherit">home</rune-icon>
+                <rune-icon>home</rune-icon>
                 <br /><br />
-                World
+                Hello World
             </div>
         </rune-panel>
 
@@ -83,13 +88,17 @@
         <rune-panel>
             <div rune-panel-body>
                 <section>
-                    <rune-input placeholder="Choose a name...">
-                        <label rune-label>Player Name</label>
-                    </rune-input>
+                    <rune-field>
+                        <label for="username">Player Name</label>
+                        <input id="username" name="username" type="text"
+                               placeholder="Choose a name..." />
+                    </rune-field>
 
-                    <rune-input placeholder="Choose a password..." type="password">
-                        <label rune-label>Password</label>
-                    </rune-input>
+                    <rune-field>
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password"
+                               placeholder="Choose a password..." />
+                    </rune-field>
                 </section>
 
                 <section>

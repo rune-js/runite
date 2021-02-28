@@ -1,0 +1,56 @@
+@import '../../palette';
+
+
+@mixin rune-icon-styles($theme) {
+    .rune-icon {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        color: black;
+
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+
+        &.rune-color-primary {
+            color: map-get($theme, primary-color);
+        }
+
+        &.rune-color-accent {
+            color: map-get($theme, accent-color);
+        }
+
+        &.rune-color-default {
+            color: map-get($theme, default-color);
+        }
+
+        &.rune-color-inherit {
+            color: inherit;
+        }
+
+        &.rune-color-soft {
+            color: rgba(0, 0, 0, 0.54);
+        }
+
+        &.rune-raised {
+            text-shadow: 1px 1px black;
+        }
+    }
+}

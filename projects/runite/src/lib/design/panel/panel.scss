@@ -15,10 +15,9 @@
         *[rune-panel-header] {
             font-size: 20px;
             line-height: 35px;
-            font-variant: small-caps;
             color: white;
             text-shadow: 1px 1px 2px black;
-            font-family: 'Trajan Pro Bold', Times, serif;
+            font-family: map-get($theme, title-font);
             text-align: center;
             border-radius: 2px 2px 1px 1px;
             border-top: 3px solid lighten($accent-darker, 8%);

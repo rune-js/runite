@@ -12,20 +12,59 @@
 }
 
 @font-face {
-    font-family: 'Trajan Pro Regular';
-    src: url('assets/trajan-pro.regular.ttf') format('truetype');
+    font-family: 'Trajan';
+    src: url('assets/Trajan-Extra Light.otf') format('opentype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 100;
 }
 
 @font-face {
-    font-family: 'Trajan Pro Bold';
-    src: url('assets/trajan-pro.bold.ttf') format('truetype');
+    font-family: 'Trajan';
+    src: url('assets/Trajan-Light.otf') format('opentype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Trajan';
+    src: url('assets/Trajan-Regular.otf') format('opentype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Trajan';
+    src: url('assets/Trajan-Semibold.otf') format('opentype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Trajan';
+    src: url('assets/Trajan-Bold.otf') format('opentype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Trajan';
+    src: url('assets/Trajan-Black.otf') format('opentype');
+    font-display: auto;
+    font-style: normal;
+    font-weight: 900;
 }
 
 $theme: rune-theme((
     body-font: ('Poppins', sans-serif),
     body-font-size: 16px,
     header-font: ('Kingthings Petrock', Times, serif),
-    title-font: ('Trajan Pro Bold', Times, serif),
+    title-font: ('Trajan', serif),
+    label-font: ('Trajan', serif),
     primary-color: $olive-drab,
     primary-color-darker: $deep-emerald,
     accent-color: $fiery-orange,
@@ -41,7 +80,6 @@ html, body {
 }
 
 body {
-    background: black;
     @include runite-body($theme);
 }
 
