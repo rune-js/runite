@@ -9,41 +9,63 @@
         label {
             font-family: map-get($theme, label-font);
             color: darken($jean-bean, 7%);
-            margin-bottom: 6px;
+            margin-bottom: 2px;
             font-size: 14px;
             font-weight: bold;
         }
 
         .rune-field-wrapper {
-            background: $jean-bean;
+            background-color: $jean-bean;
             font-weight: 400;
             border: 1px solid $woodsmoke;
             font-family: map-get($theme, body-font);
             caret-color: $parchment;
-            color: white;
-            border-radius: 3px;
-            transition: background 300ms;
-
-            &::placeholder {
-                color: $dirt;
-            }
+            color: $parchment;
+            border-radius: 2px;
+            transition: background-color 300ms, color 300ms;
+            display: flex;
+            align-items: center;
+            height: 35px;
+            padding: 0 8px;
+            box-shadow: 0 4px 5px rgb(28 28 28 / 15%);
 
             &:focus-within {
-                background: $morocco-brown;
+                background-color: lighten($jean-bean, 4%);
+            }
+
+            .rune-icon {
+                $i: 18px;
+                width: $i;
+                height: $i;
+                font-size: $i;
+
+                &.rune-color-none {
+                    color: $dirt;
+                }
             }
 
             input {
+                flex: 1 1 auto;
                 outline: none;
                 color: inherit;
                 caret-color: inherit;
                 background: transparent;
                 border-width: 0;
-                border-radius: 3px;
-                padding: 0 8px;
-                box-sizing: border-box;
-                height: 35px;
-                line-height: 35px;
+                padding: 0;
                 font-family: inherit;
+                height: 100%;
+
+                &:focus {
+                    color: white;
+                }
+
+                &::placeholder {
+                    color: darken($dirt, 10%);
+                }
+            }
+
+            .rune-icon[rune-prefix] + input {
+                padding-left: 4px;
             }
         }
     }

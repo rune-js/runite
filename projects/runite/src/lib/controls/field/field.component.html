@@ -1,5 +1,9 @@
 <ng-content select="label"></ng-content>
 
-<span class="rune-field-wrapper">
+<div class="rune-field-wrapper">
+    <ng-content select="[rune-prefix]"></ng-content>
+
     <ng-content select="input"></ng-content>
-</span>
+
+    <ng-content select="[rune-suffix]"></ng-content>
+</div>

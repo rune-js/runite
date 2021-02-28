@@ -1,6 +1,6 @@
 section {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 250px 250px;
     grid-column-gap: 15px;
 
     + section {
@@ -12,8 +12,12 @@ h1 {
     margin-bottom: 35px;
 }
 
-.rune-icon:last-of-type {
-    width: 40px;
-    height: 40px;
-    font-size: 40px;
+.create {
+    padding: 32px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+

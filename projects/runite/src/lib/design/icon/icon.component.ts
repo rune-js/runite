@@ -40,6 +40,9 @@ export class RuniteIconComponent implements OnInit {
     @HostBinding('class.rune-color-soft')
     public get softColorClass(): boolean { return this.color === 'soft'; }
 
+    @HostBinding('class.rune-color-none')
+    public get noColorClass(): boolean { return this.color === null; }
+
     @HostBinding('class.rune-raised')
     public get raisedClass(): boolean { return this.raised !== false; }
 

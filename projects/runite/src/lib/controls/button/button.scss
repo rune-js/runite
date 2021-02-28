@@ -6,12 +6,12 @@
     .rune-button {
         text-decoration: none;
         padding: 0 25px;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 28px;
         color: white;
         text-shadow: 1px 1px 2px black;
         font-family: map-get($theme, label-font);
-        border-radius: 2px;
+        border-radius: 1px;
         cursor: pointer;
         outline: none;
         transition: filter 250ms;
