@@ -25,12 +25,13 @@ $theme: rune-theme((
     body-font: ('Poppins', sans-serif),
     body-font-size: 16px,
     header-font: ('Kingthings Petrock', Times, serif),
-    primary-color: $limeade,
-    primary-color-darker: $verdun-green,
+    title-font: ('Trajan Pro Bold', Times, serif),
+    primary-color: $olive-drab,
+    primary-color-darker: $deep-emerald,
     accent-color: $fiery-orange,
     accent-color-darker: $morocco-brown,
-    default-color: $cello,
-    default-color-darker: $cinder
+    default-color: $fiord,
+    default-color-darker: $nero
 ));
 
 html, body {

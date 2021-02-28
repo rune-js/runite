@@ -1,0 +1,39 @@
+@import '../../palette';
+
+
+@mixin rune-input-styles($theme) {
+    .rune-input {
+        display: inline-flex;
+        flex-direction: column;
+
+        label {
+            font-family: map-get($theme, title-font);
+            font-variant: small-caps;
+            color: darken($jean-bean, 7%);
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        input {
+            background: $jean-bean;
+            font-weight: 400;
+            padding: 8px;
+            border: 1px solid $woodsmoke;
+            font-family: map-get($theme, body-font);
+            caret-color: $parchment;
+            color: white;
+            border-radius: 3px;
+            outline: none;
+            transition: background 300ms;
+
+            &::placeholder {
+                color: $dirt;
+            }
+
+            &:focus {
+                outline: none;
+                background: $morocco-brown;
+            }
+        }
+    }
+}

@@ -25,7 +25,7 @@
                     font-variant: small-caps;
                     color: white;
                     text-shadow: 1px 1px 2px black;
-                    font-family: 'Trajan Pro Bold', Times, serif;
+                    font-family: map-get($theme, title-font);
                     border-bottom: 4px solid darken($accent-darker, 10%);
                     border-top: 4px solid lighten($accent-darker, 8%);
                     padding: 0 16px;

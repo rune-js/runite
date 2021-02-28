@@ -11,6 +11,8 @@ export * from './lib/runite.module';
 export * from './lib/controls/controls.module';
 export * from './lib/controls/button/button.module';
 export * from './lib/controls/button/button.component';
+export * from './lib/controls/input/input.module';
+export * from './lib/controls/input/input.component';
 
 
 /**
