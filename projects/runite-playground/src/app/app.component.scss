@@ -15,58 +15,6 @@ h1 {
     margin-bottom: 35px;
 }
 
-.rune-stepper {
-    padding: 32px 16px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-
-    $size: 32px;
-    .rune-step {
-        margin: 0 -80px;
-        flex: 1 1 100px;
-        text-align: center;
-
-        &:first-of-type {
-            margin-left: 0;
-        }
-
-        &:last-of-type {
-            margin-right: 0;
-        }
-
-        .rune-step-icon {
-            background: $jean-bean;
-            color: $parchment;
-            width: $size;
-            height: $size;
-            line-height: $size;
-            text-align: center;
-            border-radius: 50%;
-            box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-            font-size: 18px;
-            font-weight: 300;
-            margin: 0 auto;
-            font-family: 'Kingthings Petrock Light', serif;
-        }
-
-        .rune-step-label {
-            font-weight: 500;
-            line-height: 24px;
-            text-align: center;
-            margin-top: 8px;
-            color: $jean-bean;
-        }
-    }
-
-    .rune-step-divider {
-        flex: 1 1 auto;
-        height: 2px;
-        background: rgba($korma, 0.4);
-        margin: ($size / 2) 0 0;
-    }
-}
-
 .create {
     padding: 32px 16px;
     box-sizing: border-box;

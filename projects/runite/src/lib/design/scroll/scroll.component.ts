@@ -8,7 +8,7 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 export class RuniteScrollComponent implements OnInit {
 
     @HostBinding('class.rune-scroll')
-    public runeScrollClass = true;
+    public readonly runeScrollClass = true;
 
     public constructor() {
     }

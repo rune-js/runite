@@ -4,6 +4,7 @@
 @import 'src/lib/design/table/table';
 @import 'src/lib/design/panel/panel';
 @import 'src/lib/design/icon/icon';
+@import 'src/lib/design/stepper/stepper';
 @import 'src/lib/controls/button/button';
 @import 'src/lib/controls/field/field';
 @import 'src/lib/layout/scroll-layout/scroll-layout';
@@ -21,6 +22,7 @@
     @include rune-table-styles($theme);
     @include rune-panel-styles($theme);
     @include rune-icon-styles($theme);
+    @include rune-stepper-styles($theme);
     @include rune-button-styles($theme);
     @include rune-field-styles($theme);
     @include rune-scroll-layout-styles($theme);
